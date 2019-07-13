@@ -17,6 +17,7 @@ public class ItemController {
 
     @RequestMapping("/item/{id}")
     public TbItem getItem(@PathVariable("id") Long id) {
+        //查询商品详情
         return itemService.getItemById(id);
     }
 }
